@@ -1,9 +1,9 @@
-Phinx Debian Package
+Codeception Debian Package
 ====================
 
-![apt-get install](https://raw.githubusercontent.com/Vitexus/phinx.deb/master/phinx-install-deb.png "apt-get install php-phinx")
+![apt-get install](https://raw.githubusercontent.com/Vitexus/codeception.deb/master/codeception-install-deb.png "apt-get install php-codeception")
 
-Phinx (https://phinx.org/) makes it ridiculously easy to manage the database migrations for your PHP app. In less than 5 minutes you can install Phinx and create your first database migration. Phinx is just about migrations without all the bloat of a database ORM system or framework.
+Codeception (https://codeception.com/) Codeception collects and shares best practices and solutions for testing PHP web applications. With a flexible set of included modules tests are easy to write, easy to use and easy to maintain. Codeception encourages developers and QA engineers to concentrate on testing and not on building test suite. 
 
 
 Installation
@@ -14,15 +14,13 @@ For Debian, Ubuntu & friends please use repo:
     wget -O - http://v.s.cz/info@vitexsoftware.cz.gpg.key|sudo apt-key add -
     echo deb http://v.s.cz/ stable main > /etc/apt/sources.list.d/ease.list
     aptitude update
-    aptitude install php-phinx
-
-![Installation](https://raw.githubusercontent.com/Vitexus/phinx.deb/master/phinx-deb-install.png "Installation")
+    aptitude install php-codeception
 
 
 Usage
 -----
 
-simply run phinx in /usr/bin
+simply run **codecept** in /usr/bin
 
 Build
 -----

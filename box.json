@@ -1,0 +1,26 @@
+{
+    "alias": "codecept.phar",
+    "chmod": "0755",
+    "compactors": [
+        "Herrera\\Box\\Compactor\\Json",
+        "Herrera\\Box\\Compactor\\Php"
+    ],
+    "directories": ["src"],
+    "files": [
+        "LICENSE",
+        "codeception.yml",
+        "shim.php",
+        "phpunit5-loggers.php",
+        "autoload.php"
+    ],
+    "finder": [
+        {
+            "name": "*.php",
+            "in": "vendor"
+        }
+    ],
+    "git-version": "git_tag",
+    "main": "codecept",
+    "output": "codecept-@git-version@.phar",
+    "stub": true
+}
