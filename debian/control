@@ -7,10 +7,10 @@ Priority: optional
 Homepage: https://codeception.org/
 
 Package: php-codeception
-Depends: ${misc:Depends},php5-common | php7.0-common
+Depends: ${misc:Depends},php5-cli | php7.0-cli | php-7.1-cli
 Suggests: selenium-server
 Architecture: all
-Section: development
+Section: devel
 Priority: optional
 Description: Elegant and Efficient Testing for PHP
  Codeception makes it ridiculously easy to manage the database 

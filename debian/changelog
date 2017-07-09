@@ -1,5 +1,11 @@
-php-codeception (2.3.3-1) UNRELEASED; urgency=medium
+php-codeception (2.3.3-2) UNRELEASED; urgency=medium
 
   * Initial release
+  * Merge branch '2.3' of github.com:Codeception/Codeception into 2.3
+  * Merge branch '2.3' of github.com:Codeception/Codeception into 2.3
+  * Merge branch '2.3' of github.com:Codeception/Codeception into 2.3
+  * Merge branch '2.3' of github.com:Codeception/Codeception into 2.3
+  * Merge branch '2.3' of github.com:Codeception/Codeception into 2.3
+  * Merge branch '2.3' of github.com:Codeception/Codeception into 2.3
 
- -- Vítězslav Dvořák <info@vitexsoftware.cz>  Sat, 12 Nov 2016 00:00:25 +0100
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Sun, 09 Jul 2017 10:43:36 +0200

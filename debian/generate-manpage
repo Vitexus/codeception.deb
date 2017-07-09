@@ -1,0 +1,33 @@
+#!/bin/bash
+set -e
+set -o pipefail
+
+date_string="$(date -u +%F -d "$(dpkg-parsechangelog -S Date)")"
+version_string="$(dpkg-parsechangelog -S Version | cut -d- -f-1)"
+
+# Fake presence of curl for ./codecept
+curl(){ return 0; } && export -f curl
+
+# Provide manpage header and intro
+cat <<EOF
+.TH "codecept" "1" "$date_string" "$version_string" "The codecept ACME client"
+.SH NAME
+codecept - Codeception simplifies REST and SOAP testing
+.SH DESCRIPTION
+.B codecept
+Codeception collects and shares best practices and solutions 
+for testing PHP web applications. With a flexible set of 
+included modules tests are easy to write, easy to use and 
+easy to maintain. Codeception encourages developers and QA 
+engineers to concentrate on testing and not on building test 
+suite. 
+
+.SH OPTIONS
+EOF
+
+# Provide usage information
+./Codeception/codecept --help | sed -r 's|\./(codecept)|\1|'
+
+# Add a final newline
+echo
+

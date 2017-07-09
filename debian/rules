@@ -3,3 +3,8 @@
 %:
 	dh $@
 
+override_dh_installman:
+	# Generate manpage
+	./debian/generate-manpage > debian/codecept.1
+	dh_installman --language=C
+
